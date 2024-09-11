@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+	<div class="hero">
+		<nav>
+			<img src="images/logo.png"alt="">
+		
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">SERVICES</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
+		<div class="icon">
+			<img src="images/moon.png"alt=""id="icon">
+		</div>
+		</nav>
+		<div class="info">
+			<h1>I am <span>Kate</span> web designer</h1>
+			<p>This is my offical portfolio of my websites<br> to showcase my skills and ui skills and development skills</p>
+			<a href="#">Download cv</a>
+		</div>
+		<div class="img-box">
+			<img src="images/pattern.png"alt=""class="back">
+			<img src="images/girl.png"alt=""class="front">
+		</div>
+		<div class="social">
+			<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#"><i class="fa-brands fa-behance"></i></a>
+			<a href="#"><i class="fa-brands fa-dribbble"></i></a>
+		</div>
+	</div>
+ <script>
+ 	var icon=document.getElementById("icon");
+ 	icon.onclick=function(){
+ 		document.body.classList.toggle("dark-theme");
+ 		if(document.body.classList.contains("dark-theme")){
+ 			icon.src="images/sun.png";
+ 		}
+ 		else{
+ 			icon.src="images/moon.png";
+ 		}
+ 	}
+ </script>
+</body>
+</html>
